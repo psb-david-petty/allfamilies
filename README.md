@@ -15,7 +15,8 @@ Note: My typical [Aspen](https://ma-brookline.myfollett.com/aspen/) class report
 LastName,FirstName,Grade,Preferred,Gender,Email1,Email2,DOB,Pref pronoun,Cohort	
 ```
 ![Aspen class report fields](./images/aspen-class-report-fields.png)
-Sample formats for each are...
+
+Sample formats for each .CSV file are...
 
 [`test-all-families.csv`](./data/test-all-families.csv):
 
