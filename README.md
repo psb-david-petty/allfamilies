@@ -9,6 +9,12 @@ The `test-all-families.csv` is in a specific format as defined by *PSB [Aspen](h
 - The fourth entry (index 3) is `PreferredName` or empty
 - The student's `brooklinek12.org` e-mail address appears somewhere in the record as the first entry with an '`@`'.
 
+Note: My typical [Aspen](https://ma-brookline.myfollett.com/aspen/) class report .CSV file uses the following fields:
+
+```
+LastName,FirstName,Grade,Preferred,Gender,Email1,Email2,DOB,Pref pronoun,Cohort	
+```
+![Aspen class report fields](./images/aspen-class-report-fields.png)
 Sample formats for each are...
 
 [`test-all-families.csv`](./data/test-all-families.csv):
