@@ -35,7 +35,7 @@ Name,,,,,Relationship,,Home Phone,,Work Phone,,Cell Phone,,,,Email Address,,
 Aardvark,Student,6,Arthur,M,26aardvarka@brooklinek12.org,arthur@pbs.org,4/7/08,M,,,,,,,
 ```
 
-With sample output:
+Sample output from `allfamilies.py` is:
 
 <span style="color:red;">`dcp:~/work/Python/allfamilies$`</span>
 <span style="color:green;">`python3 src/allfamilies.py data/test-all-families.csv data/test-class.csv -ps`</span>
