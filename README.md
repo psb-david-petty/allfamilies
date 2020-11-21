@@ -1,6 +1,6 @@
 # allfamilies
 
-This [Python](https://docs.python.org/3/) script parses a family .CSV file as saved from *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/) > Students > Reports > Student Contacts - Parent Guardian Only* &mdash; selecting All & CSV. 
+The [`allfamilies.py`](./src/allfamilies.py) [Python](https://docs.python.org/3/) script parses a family .CSV file as saved from *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/) > Students > Reports > Student Contacts - Parent Guardian Only* &mdash; selecting All & CSV. 
 
 The `test-all-families.csv` file is in a specific format as defined by *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/)*. The `test-class.csv` file(s) (if present on the command line) can be any *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/)* class report with the following criteria:
 
