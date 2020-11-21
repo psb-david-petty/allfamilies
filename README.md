@@ -2,12 +2,13 @@
 
 This [Python](https://docs.python.org/3/) script parses a family .CSV file as saved from *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/) > Students > Reports > Student Contacts - Parent Guardian Only* &mdash; selecting All & CSV. 
 
-The `test-all-families.csv` is in a specific format as defined by *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/)*. The `test-class.csv` file(s) (if present on the command line) can be any *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/)* class report with the following criteria:
+The `test-all-families.csv` file is in a specific format as defined by *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/)*. The `test-class.csv` file(s) (if present on the command line) can be any *PSB [Aspen](https://ma-brookline.myfollett.com/aspen/)* class report with the following criteria:
 
 - The first entry (index 0) is `LastName`
 - The second entry (index 1) is `FirstName`
 - The fourth entry (index 3) is `PreferredName` or empty
 - The student's `brooklinek12.org` e-mail address appears somewhere in the record as the first entry with an '`@`'.
+- The combination of the `LastName` &amp; `FirstName` fields in `test-class.csv` must match the key `"<LastName>, <FirstName>"` following `Name` in the student record in `test-all-families.csv`.
 
 Note: My typical [Aspen](https://ma-brookline.myfollett.com/aspen/) class report .CSV file uses the following fields:
 
@@ -50,7 +51,7 @@ Sample output from `allfamilies.py` is:
 ## Command-line options
 
 <span style="color:red;">`dcp:~/work/Python/allfamilies$`</span>
-<span style="color:green;">`python3 src/allfamilies.py`</span>
+<span style="color:green;">`python3 src/allfamilies.py -?`</span>
 
 ```
 usage: allfamilies.py [-?] [--version] [-p] [-r] [-t] [-s] [-v]
