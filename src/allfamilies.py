@@ -190,7 +190,8 @@ if __name__ == '__main__':
         )
     if any((is_idle, is_pycharm, is_jupyter, )):
         prefix = '../data/'
-        test_path = os.path.join(prefix, 'test-all-families.csv')
+        test_families_path = os.path.join(prefix, 'test-all-families.csv')
+        test_class_path = os.path.join(prefix, 'test-class.csv')
         family_path = os.path.join(prefix, '2019-2020-all-families.csv')
         student_paths = [os.path.join(prefix, path) for path in [
             '2019-2020-apcsp-d.csv',
@@ -212,6 +213,6 @@ if __name__ == '__main__':
         ]
         main(['allfamilies.py', '-prts', family_path, ] + student_paths)
         print()
-        main(['allfamilies.py', '-?', test_path, ])
+        main(['allfamilies.py', '-pstr', test_families_path, test_class_path, ])
     else:
         main(sys.argv)
