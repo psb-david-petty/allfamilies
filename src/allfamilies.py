@@ -13,7 +13,7 @@ report.
 
 def families(path, addresses=None,
              pp=False, rp=False, tp=False, sp=False, verbose=False,
-             parents=['mother', 'father', 'guardian', ], ):
+             parents=['mother', 'father', 'parent', 'guardian', ], ):
     """Parse .CSV file path and create GMail-formatted e-mail addresses.
     TODO: document all parameters"""
     with open(path, 'rb') as csv_file:
