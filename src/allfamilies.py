@@ -42,7 +42,7 @@ def families(path, addresses=None,
         student, preferred, yog = str(), str(), str()
         in_addresses, echoed, state = False, set(), State.START
         for row in csv.reader(lines):
-            if row[1].lower().startswith('nam'):
+            if row and row[1].lower().startswith('nam'):
                 student = row[2]
                 in_addresses = addresses and student in addresses
                 if in_addresses or not addresses:
